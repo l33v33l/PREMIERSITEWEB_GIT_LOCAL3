@@ -3,10 +3,10 @@
 ** Table des matières **
 
 1. [Mettre à jour courriel ou nom d'utilisateur](#Si-avoir-changé-le-nom-d'utilisateur-et-le-courriel)
-   1.1 [Étapes pour MAC](#2.1---Étapes-POUR-MAC)
-1.
-1.
-1.
+   1.1 [Étapes pour MAC](##2.1---Étapes-POUR-MAC)
+1. []()
+1. []()
+1. []()
 
 ## 1 - Si avoir changé le nom d'utilisateur et le courriel
 
