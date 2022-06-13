@@ -14,13 +14,14 @@ POUR MAC :
 <br>1 : eval "$(ssh-agent -s)"
 <br>2 : open ~/.ssh/config
 <br>3 : SI LE FICHIER N'EXISTE PAS, alors  
-<br>3.1 : touch ~/.ssh/config  
+<br>3.1 : touch ~/.ssh/config
 <br>3.2 : open ~/.ssh/config
 <br>4 : AJOUTER (SANS LES GUILLEMETS)
 <br>"Host \"
 <br>AddKeysToAgent yes
 <br>UseKeychain yes
 <br>IdentityFile ~/.ssh/id_ed25519
+
 <br>5 : ssh-keygen -t ed25519 -C "your_email@example.com"
 <br>5.1 : APPUYER SUR ENTER ET NE RIEN RENTRER (À MOINS QUE VOULOIR ENTRER UN MOT DE PASSE)
 <br>6 : ssh-add -K ~/.ssh/id_ed25519 (ON PEUT ENLEVER -K SI PAS METTRE DE MOT DE PASSE) (DEPUIS MAC 12 -K et -A est remplacé par --apple-use-keychain et --apple-load-keychain)
