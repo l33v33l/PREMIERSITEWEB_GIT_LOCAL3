@@ -2,60 +2,61 @@
 
 ** Table des matières **
 
-1.
-1.
+1. Mettre à jour courriel ou nom d'utilisateur
+1. Clef SSH
 1.
 1.
 1.
 
-## SI AVOIR CHANGÉ LE NOM D'UTILISATEUR OU DE COURRIEL
+## 1 - SI AVOIR CHANGÉ LE NOM D'UTILISATEUR OU DE COURRIEL
 
 - git config --global user.email "nouveau courriel"
 - git config --global user.name "nom d'utilisateur"
 
-## CLEF SSH
+## 2 - Créer une clef SSH et l'associé au compte
 
 - Source : https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 - Source : https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
 
 ### Étapes POUR MAC :
 
-- 1 eval "$(ssh-agent -s)"
+- 1 : eval "$(ssh-agent -s)"
 - 2 : open ~/.ssh/config
 - 3 : SI LE FICHIER N'EXISTE PAS, alors faire ceci
   - 3.1 : touch ~/.ssh/config
-    -- 3.2 : open ~/.ssh/config
+  - 3.2 : open ~/.ssh/config
+- 4 : AJOUTER DANS LE FICHIER (SANS LES GUILLEMETS)
+  "Host \"
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_ed25519
 
-<br>4 : AJOUTER DANS LE FICHIER (SANS LES GUILLEMETS)
-<br>"Host \"
-<br>AddKeysToAgent yes
-<br>UseKeychain yes
-<br>IdentityFile ~/.ssh/id_ed25519
+- 5 : ssh-keygen -t ed25519 -C "your_email@example.com"
+  - 5.1 : APPUYER SUR ENTER ET NE RIEN RENTRER (À MOINS QUE VOULOIR ENTRER UN MOT DE PASSE)
+- 6 : ssh-add -K ~/.ssh/id_ed25519
+  - ON PEUT ENLEVER -K SI PAS METTRE DE MOT DE PASSE) (DEPUIS MAC 12 -K et -A est remplacé par --apple-use-keychain et --apple-load-keychain)
+- 7 : AJOUTER LA CLEF AU COMPTE GIT : https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account
+- 8 : pbcopy < ~/.ssh/id_ed25519.pub
 
-<br>5 : ssh-keygen -t ed25519 -C "your_email@example.com"
-<br>5.1 : APPUYER SUR ENTER ET NE RIEN RENTRER (À MOINS QUE VOULOIR ENTRER UN MOT DE PASSE)
-<br>6 : ssh-add -K ~/.ssh/id_ed25519
-#ON PEUT ENLEVER -K SI PAS METTRE DE MOT DE PASSE) (DEPUIS MAC 12 -K et -A est remplacé par --apple-use-keychain et --apple-load-keychain)
-<br>7 : AJOUTER LA CLEF AU COMPTE GIT : https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account
-<br>8 : pbcopy < ~/.ssh/id_ed25519.pub
-
-# SI VOULOIR UPDATE UN FICHIER DANS UN RÉPO LOCAL
+# SI VOULOIR UPDATE UN FICHIER À PARTIR D'UN RÉPO LOCAL
 
 https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/importing-a-git-repository-using-the-command-line
 
-<br>1 : Créer dossier
-<br>2 : cd dans le dossier dans la ligne de commandes
-<br>2 : git init
-<br>3 : git status
-<br>4 : git add nomDuFichier
-<br>5 : git commit -m "" -m ""
-#Créer le lien entre le dossier et le repo
-<br>6 : Créer un repo sur git
-<br>7 : git remote add origin "lien ssh ou https sur github une fois qu'avoir créé le dépôt"
-<br>8 : git remote -v
-#Pour vérifier si l'url est ajouté.
-<br>9 : git push origin main
-#On peut aussi utiliser git push -u origin master. Ça permet après de juste faire "git push" les fois d'après
+- 1 : Créer dossier
+- 2 : cd dans le dossier dans la ligne de commandes
+- 3 : git init
+- 4 : git status
+- 5 : git add nomDuFichier
+- 6 : git commit -m "" -m ""
+
+## Créer le lien entre le dossier et le repo
+
+- 7 : Créer un repo sur git
+- 8 : git remote add origin "lien ssh ou https sur github une fois qu'avoir créé le dépôt"
+- 9 : git remote -v
+  - Pour vérifier si l'url est ajouté.
+- 10 : git push origin main
+  - On peut aussi utiliser git push -u origin master. Ça permet après de juste faire "git push" les fois d'après
 
 # SI VOULOIR TÉLÉCHARGER UN FICHIER D'UN RÉPO EN LIGNE (COMPLÉTER)
 
