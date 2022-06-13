@@ -10,8 +10,8 @@
 
 ## SI AVOIR CHANGÉ LE NOM D'UTILISATEUR OU DE COURRIEL
 
-<br> git config --global user.email "nouveau courriel"
-<br> git config --global user.name "nom d'utilisateur"
+- git config --global user.email "nouveau courriel"
+- git config --global user.name "nom d'utilisateur"
 
 ## CLEF SSH
 
@@ -20,11 +20,11 @@
 
 ### Étapes POUR MAC :
 
-<br>1 : eval "$(ssh-agent -s)"
-<br>2 : open ~/.ssh/config
-<br>3 : SI LE FICHIER N'EXISTE PAS, alors faire ceci
-<br>3.1 : touch ~/.ssh/config
-<br>3.2 : open ~/.ssh/config
+- 1 eval "$(ssh-agent -s)"
+- 2 : open ~/.ssh/config
+- 3 : SI LE FICHIER N'EXISTE PAS, alors faire ceci
+  <br>3.1 : touch ~/.ssh/config
+  <br>3.2 : open ~/.ssh/config
 
 <br>4 : AJOUTER DANS LE FICHIER (SANS LES GUILLEMETS)
 <br>"Host \"
