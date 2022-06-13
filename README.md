@@ -1,22 +1,25 @@
 # Configurer GitHub
 
-** Sources **
-
-https://www.youtube.com/watch?v=RGOj5yH7evk
-
 ** Table des matières **
 
-# SI AVOIR CHANGÉ LE NOM D'UTILISATEUR OU DE COURRIEL
+1.
+2.
+3.
+4.
+5.
+
+## SI AVOIR CHANGÉ LE NOM D'UTILISATEUR OU DE COURRIEL
 
 <br> git config --global user.email "nouveau courriel"
 <br> git config --global user.name "nom d'utilisateur"
 
-# CLEF SSH
+## CLEF SSH
 
 Source : https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 Source : https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
 
-POUR MAC :
+### Étapes POUR MAC :
+
 <br>1 : eval "$(ssh-agent -s)"
 <br>2 : open ~/.ssh/config
 <br>3 : SI LE FICHIER N'EXISTE PAS, alors faire ceci
@@ -100,3 +103,7 @@ ssh-add -K ~/.ssh/id_ed25519
 ET ÇA
 
 git push origin main
+
+## Sources
+
+- Vidéo qui couvre en général le sujet : https://www.youtube.com/watch?v=RGOj5yH7evk
