@@ -11,23 +11,23 @@ Source : https://docs.github.com/en/authentication/connecting-to-github-with-ssh
 Source : https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
 
 POUR MAC :
-1 : eval "$(ssh-agent -s)"
-2 : open ~/.ssh/config
-3 : SI LE FICHIER N'EXISTE PAS, alors  
-=> touch ~/.ssh/config  
-=> open ~/.ssh/config
-4 : AJOUTER (SANS LES GUILLEMETS)
+<br>1 : eval "$(ssh-agent -s)"
+<br>2 : open ~/.ssh/config
+<br>3 : SI LE FICHIER N'EXISTE PAS, alors  
+<br>=> touch ~/.ssh/config  
+<br>=> open ~/.ssh/config
+<br>4 : AJOUTER (SANS LES GUILLEMETS)
 
-"Host \"
-AddKeysToAgent yes
-UseKeychain yes
-IdentityFile ~/.ssh/id_ed25519
+<br>"Host \"
+<br>AddKeysToAgent yes
+<br>UseKeychain yes
+<br>IdentityFile ~/.ssh/id_ed25519
 
-5 : ssh-keygen -t ed25519 -C "your_email@example.com"
-5.1 : APPUYER SUR ENTER ET NE RIEN RENTRER (À MOINS QUE VOULOIR ENTRER UN MOT DE PASSE)
-6 : ssh-add -K ~/.ssh/id_ed25519 (ON PEUT ENLEVER -K SI PAS METTRE DE MOT DE PASSE) (DEPUIS MAC 12 -K et -A est remplacé par --apple-use-keychain et --apple-load-keychain)
-7 : AJOUTER LA CLEF AU COMPTE GIT : https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account
-8 : pbcopy < ~/.ssh/id_ed25519.pub
+<br>5 : ssh-keygen -t ed25519 -C "your_email@example.com"
+<br>5.1 : APPUYER SUR ENTER ET NE RIEN RENTRER (À MOINS QUE VOULOIR ENTRER UN MOT DE PASSE)
+<br>6 : ssh-add -K ~/.ssh/id_ed25519 (ON PEUT ENLEVER -K SI PAS METTRE DE MOT DE PASSE) (DEPUIS MAC 12 -K et -A est remplacé par --apple-use-keychain et --apple-load-keychain)
+<br>7 : AJOUTER LA CLEF AU COMPTE GIT : https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account
+<br>8 : pbcopy < ~/.ssh/id_ed25519.pub
 
 # SI VOULOIR UPDATE UN FICHIER DANS UN RÉPO LOCAL
 
