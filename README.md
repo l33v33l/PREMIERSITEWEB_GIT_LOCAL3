@@ -3,10 +3,10 @@
 ** Table des matières **
 
 1. [Mettre à jour courriel ou nom d'utilisateur](#Si-avoir-changé-le-nom-d'utilisateur-et-le-courriel)
-   1.1 [Étapes pour MAC](##2.1---Étapes-POUR-MAC)
-1. []()
-1. []()
-1. []()
+   1.1 [Étapes pour MAC](#2.1---Étapes-POUR-MAC)
+1. [À partir d'un repo local](#3---À-partir-d'un-repo-local)
+1. [À partir d'un repo en ligne](#4---à-partir-dun-repo-en-ligne)
+1. [Sources](#5---sources)
 
 ## 1 - Si avoir changé le nom d'utilisateur et le courriel
 
@@ -38,7 +38,7 @@
 - 7 : AJOUTER LA CLEF AU COMPTE GIT : https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account
 - 8 : pbcopy < ~/.ssh/id_ed25519.pub
 
-# 3 - Mettre à jour un repo à partir d'un repo local
+## 3 - À partir d'un repo local
 
 https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/importing-a-git-repository-using-the-command-line
 
@@ -58,7 +58,7 @@ https://docs.github.com/en/get-started/importing-your-projects-to-github/importi
 - 10 : git push origin main
   - On peut aussi utiliser git push -u origin master. Ça permet après de juste faire "git push" les fois d'après
 
-# SI VOULOIR TÉLÉCHARGER UN FICHIER D'UN RÉPO EN LIGNE (COMPLÉTER)
+## 4 - À partir d'un repo en ligne
 
 1 : Créer dossier
 2 : cd dans le dossier dans la ligne de commandes
@@ -105,6 +105,6 @@ ET ÇA
 
 git push origin main
 
-## Sources
+## 5 - Sources
 
 - Vidéo qui couvre en général le sujet : https://www.youtube.com/watch?v=RGOj5yH7evk
