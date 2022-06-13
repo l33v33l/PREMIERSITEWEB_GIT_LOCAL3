@@ -4,11 +4,12 @@
 
 1. Mettre à jour courriel ou nom d'utilisateur
 1. Clef SSH
+   1.1 Étapes pour MAC
 1.
 1.
 1.
 
-## 1 - SI AVOIR CHANGÉ LE NOM D'UTILISATEUR OU DE COURRIEL
+## 1 - Si avoir changé le nom d'utilisateur et le courriel
 
 - git config --global user.email "nouveau courriel"
 - git config --global user.name "nom d'utilisateur"
@@ -18,7 +19,7 @@
 - Source : https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 - Source : https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
 
-### Étapes POUR MAC :
+### 2.1 - Étapes POUR MAC
 
 - 1 : eval "$(ssh-agent -s)"
 - 2 : open ~/.ssh/config
@@ -38,7 +39,7 @@
 - 7 : AJOUTER LA CLEF AU COMPTE GIT : https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account
 - 8 : pbcopy < ~/.ssh/id_ed25519.pub
 
-# SI VOULOIR UPDATE UN FICHIER À PARTIR D'UN RÉPO LOCAL
+# 3 - Mettre à jour un repo à partir d'un repo local
 
 https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/importing-a-git-repository-using-the-command-line
 
@@ -49,7 +50,7 @@ https://docs.github.com/en/get-started/importing-your-projects-to-github/importi
 - 5 : git add nomDuFichier
 - 6 : git commit -m "" -m ""
 
-## Créer le lien entre le dossier et le repo
+<u> Créer le lien entre le dossier et le repo /<u>
 
 - 7 : Créer un repo sur git
 - 8 : git remote add origin "lien ssh ou https sur github une fois qu'avoir créé le dépôt"
