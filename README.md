@@ -16,6 +16,7 @@ POUR MAC :
 <br>3 : SI LE FICHIER N'EXISTE PAS, alors  
 <br>3.1 : touch ~/.ssh/config
 <br>3.2 : open ~/.ssh/config
+
 <br>4 : AJOUTER (SANS LES GUILLEMETS)
 <br>"Host \"
 <br>AddKeysToAgent yes
