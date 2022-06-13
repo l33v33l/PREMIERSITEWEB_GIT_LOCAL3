@@ -119,9 +119,26 @@ git push origin main
   ** Ça doit être le plus descriptif possible et utiliser les conventions **
 - 3 : git checkout main
   Pour changer de branche
+- 4 : git push
+  Si on n'a pas déjà configuré la branche, alors ça va afficher l'instruction qui permet de lier la branche au compte github.
+  L'idée est de push la branche dans le compte github puis ensuite de faire un "pull request".
+  Pull request = requête pour amener le code de la branche divergente dans la branche centrale.
+- 5 : copier-coller l'instruction affiché dans l'affichage de l'instruction précédente et appuyer < enter >
+  Pour push la branche dans le compte github
+  Le Flag -upstream dans l'instruction permet de push de manière raccourcie : git push (au lieu de git push origin main)
+  Équivalent raccourcie de l'instruction qui sera fournie : git push -u origin nom_de_la_nouvelle_branche
+- 6 : Faire un pull request
+
+## 6 - Fusionner deux branches
+
+- 1 : git diff
+  Pour voir la différence entre les fichiers des deux branches.
+- 2 : git
 
 ## 6 - Sources
 
 - Vidéo qui couvre en général le sujet : https://www.youtube.com/watch?v=RGOj5yH7evk
 
 Test Test Test Test
+
+Test
