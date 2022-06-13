@@ -14,10 +14,10 @@ POUR MAC :
 <br>1 : eval "$(ssh-agent -s)"
 <br>2 : open ~/.ssh/config
 <br>3 : SI LE FICHIER N'EXISTE PAS, alors  
-<br>=> touch ~/.ssh/config  
-<br>=> open ~/.ssh/config
-<br>4 : AJOUTER (SANS LES GUILLEMETS)
+<br> touch ~/.ssh/config  
+<br> open ~/.ssh/config
 
+<br>4 : AJOUTER (SANS LES GUILLEMETS)
 <br>"Host \"
 <br>AddKeysToAgent yes
 <br>UseKeychain yes
