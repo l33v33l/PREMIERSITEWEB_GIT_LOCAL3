@@ -111,14 +111,14 @@ git push origin main
 
 ## 5 - Créer une nouvelle branche
 
-1 - git branch
-Pour savoir quels sont les branches disponibles
-2 - git checkout -b nom_de_la_nouvelle_branche
-Exemple : feature-...-...
-Exemple 2 : feature*...*...
-** Ça doit être le plus descriptif possible et utiliser les conventions **
-3 - git checkout main
-Pour changer de branche
+- 1 : git branch
+  Pour savoir quels sont les branches disponibles
+- 2 : git checkout -b nom_de_la_nouvelle_branche
+  Exemple : feature-...-...
+  Exemple 2 : feature*...*...
+  ** Ça doit être le plus descriptif possible et utiliser les conventions **
+- 3 : git checkout main
+  Pour changer de branche
 
 ## 6 - Sources
 
