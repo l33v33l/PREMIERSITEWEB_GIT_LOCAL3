@@ -23,8 +23,8 @@
 - 1 eval "$(ssh-agent -s)"
 - 2 : open ~/.ssh/config
 - 3 : SI LE FICHIER N'EXISTE PAS, alors faire ceci
-  -- 3.1 : touch ~/.ssh/config
-  -- 3.2 : open ~/.ssh/config
+  - 3.1 : touch ~/.ssh/config
+    -- 3.2 : open ~/.ssh/config
 
 <br>4 : AJOUTER DANS LE FICHIER (SANS LES GUILLEMETS)
 <br>"Host \"
