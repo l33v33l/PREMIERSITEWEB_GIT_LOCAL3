@@ -9,6 +9,7 @@
      <!--- Commentaire https://www.jamestharpe.com/markdown-comments/ -->
 1. [À partir d'un repo local](#3---à-partir-dun-repo-local)
 1. [À partir d'un repo en ligne](#4---à-partir-dun-repo-en-ligne)
+1. [Créer une nouvelle branche](#5---créer-une-nouvelle-branche)
 1. [Sources](#5---sources)
 
 ## 1 - Si avoir changé le nom d'utilisateur et le courriel
@@ -108,6 +109,17 @@ ET ÇA
 
 git push origin main
 
-## 5 - Sources
+## 5 - Créer une nouvelle branche
+
+1 - git branch
+Pour savoir quels sont les branches disponibles
+2 - git checkout -b nom_de_la_nouvelle_branche
+Exemple : feature-...-...
+Exemple 2 : feature*...*...
+** Ça doit être le plus descriptif possible et utiliser les conventions **
+3 - git checkout main
+Pour changer de branche
+
+## 6 - Sources
 
 - Vidéo qui couvre en général le sujet : https://www.youtube.com/watch?v=RGOj5yH7evk
