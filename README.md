@@ -2,8 +2,8 @@
 
 # SI AVOIR CHANGÉ LE NOM D'UTILISATEUR OU DE COURRIEL
 
-git config --global user.email "nouveau courriel"
-git config --global user.name "nom d'utilisateur"
+<br> git config --global user.email "nouveau courriel"
+<br> git config --global user.name "nom d'utilisateur"
 
 # CLEF SSH
 
