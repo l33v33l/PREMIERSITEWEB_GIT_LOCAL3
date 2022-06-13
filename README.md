@@ -50,7 +50,7 @@ https://docs.github.com/en/get-started/importing-your-projects-to-github/importi
 - 5 : git add nomDuFichier
 - 6 : git commit -m "" -m ""
 
-<u> Créer le lien entre le dossier et le repo /<u>
+<u> Créer le lien entre le dossier et le repo </u>
 
 - 7 : Créer un repo sur git
 - 8 : git remote add origin "lien ssh ou https sur github une fois qu'avoir créé le dépôt"
