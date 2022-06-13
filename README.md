@@ -4,7 +4,7 @@
 
 1. [Mettre à jour courriel ou nom d'utilisateur](#Si-avoir-changé-le-nom-d'utilisateur-et-le-courriel)
 1. [Clef SSH](#2---créer-une-clef-ssh-et-lassocié-au-compte)
-   1.1 [Étapes pour MAC](#21---étapes-pour-mac)
+   2.1 [Étapes pour MAC](#21---étapes-pour-mac)
 1. [À partir d'un repo local](#3---à-partir-dun-repo-local)
 1. [À partir d'un repo en ligne](#4---à-partir-dun-repo-en-ligne)
 1. [Sources](#5---sources)
