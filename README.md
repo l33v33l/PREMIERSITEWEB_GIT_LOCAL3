@@ -33,18 +33,18 @@ POUR MAC :
 
 https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/importing-a-git-repository-using-the-command-line
 
-1 : Créer dossier
-2 : cd dans le dossier dans la ligne de commandes
-2 : git init
-3 : git status
-4 : git add nomDuFichier
-5 : git commit -m "" -m ""
+<br>1 : Créer dossier
+<br>2 : cd dans le dossier dans la ligne de commandes
+<br>2 : git init
+<br>3 : git status
+<br>4 : git add nomDuFichier
+<br>5 : git commit -m "" -m ""
 --Créer le lien entre le dossier et le repo--
-6 : Créer un repo sur git
-7 : git remote add origin "lien ssh ou https sur github une fois qu'avoir créé le "
-8 : git remote -v
+<br>6 : Créer un repo sur git
+<br>7 : git remote add origin "lien ssh ou https sur github une fois qu'avoir créé le "
+<br>8 : git remote -v
 #Pour vérifier si l'url est ajouté.
-9 : git push origin main
+<br>9 : git push origin main
 #On peut aussi utiliser git push -u origin master. Ça permet après de juste faire "git push" les fois d'après
 
 # SI VOULOIR TÉLÉCHARGER UN FICHIER D'UN RÉPO EN LIGNE (COMPLÉTER)
