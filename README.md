@@ -1,4 +1,10 @@
-# À partir de cette vidéo https://www.youtube.com/watch?v=RGOj5yH7evk
+# Configurer GitHub
+
+** Sources **
+
+https://www.youtube.com/watch?v=RGOj5yH7evk
+
+** Table des matières **
 
 # SI AVOIR CHANGÉ LE NOM D'UTILISATEUR OU DE COURRIEL
 
@@ -13,11 +19,11 @@ Source : https://docs.github.com/en/authentication/connecting-to-github-with-ssh
 POUR MAC :
 <br>1 : eval "$(ssh-agent -s)"
 <br>2 : open ~/.ssh/config
-<br>3 : SI LE FICHIER N'EXISTE PAS, alors
+<br>3 : SI LE FICHIER N'EXISTE PAS, alors faire ceci
 <br>3.1 : touch ~/.ssh/config
 <br>3.2 : open ~/.ssh/config
 
-<br>4 : AJOUTER (SANS LES GUILLEMETS)
+<br>4 : AJOUTER DANS LE FICHIER (SANS LES GUILLEMETS)
 <br>"Host \"
 <br>AddKeysToAgent yes
 <br>UseKeychain yes
@@ -25,7 +31,8 @@ POUR MAC :
 
 <br>5 : ssh-keygen -t ed25519 -C "your_email@example.com"
 <br>5.1 : APPUYER SUR ENTER ET NE RIEN RENTRER (À MOINS QUE VOULOIR ENTRER UN MOT DE PASSE)
-<br>6 : ssh-add -K ~/.ssh/id_ed25519 (ON PEUT ENLEVER -K SI PAS METTRE DE MOT DE PASSE) (DEPUIS MAC 12 -K et -A est remplacé par --apple-use-keychain et --apple-load-keychain)
+<br>6 : ssh-add -K ~/.ssh/id_ed25519
+#ON PEUT ENLEVER -K SI PAS METTRE DE MOT DE PASSE) (DEPUIS MAC 12 -K et -A est remplacé par --apple-use-keychain et --apple-load-keychain)
 <br>7 : AJOUTER LA CLEF AU COMPTE GIT : https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account
 <br>8 : pbcopy < ~/.ssh/id_ed25519.pub
 
@@ -39,9 +46,9 @@ https://docs.github.com/en/get-started/importing-your-projects-to-github/importi
 <br>3 : git status
 <br>4 : git add nomDuFichier
 <br>5 : git commit -m "" -m ""
---Créer le lien entre le dossier et le repo--
+#Créer le lien entre le dossier et le repo
 <br>6 : Créer un repo sur git
-<br>7 : git remote add origin "lien ssh ou https sur github une fois qu'avoir créé le "
+<br>7 : git remote add origin "lien ssh ou https sur github une fois qu'avoir créé le dépôt"
 <br>8 : git remote -v
 #Pour vérifier si l'url est ajouté.
 <br>9 : git push origin main
