@@ -13,7 +13,7 @@ Source : https://docs.github.com/en/authentication/connecting-to-github-with-ssh
 POUR MAC :
 <br>1 : eval "$(ssh-agent -s)"
 <br>2 : open ~/.ssh/config
-<br>3 : SI LE FICHIER N'EXISTE PAS, alors  
+<br>3 : SI LE FICHIER N'EXISTE PAS, alors
 <br>3.1 : touch ~/.ssh/config
 <br>3.2 : open ~/.ssh/config
 
