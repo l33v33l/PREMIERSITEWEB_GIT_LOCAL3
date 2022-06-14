@@ -10,7 +10,8 @@
 1. [À partir d'un repo local](#3---à-partir-dun-repo-local)
 1. [À partir d'un repo en ligne](#4---à-partir-dun-repo-en-ligne)
 1. [Créer une nouvelle branche](#5---créer-une-nouvelle-branche)
-1. [Renverse](#6---renverser-des-changements-git-add-ou-git-commit)
+1. [Renverser les changements (add, commit)](#6---renverser-des-changements-git-add-ou-git-commit)
+1. [Forker à extérieur ou vers le dépôt original](#7---fork)
 1. [Sources](#5---sources)
 
 ## 1 - Si avoir changé le nom d'utilisateur et le courriel
